@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-    <!--<frameset rows = "1580px, 500px, 500px">
-        <frameset cols ="30%, 70%">
-            <frame src = "i4-list.html">
-            <frame src = "i4-NoRecordBook.html">
-        </frameset>
-        <frame src = "i4-table.html">
-        <frame src = "i4-fio.html">
-        <noframes>
-            <h1>Sorry...</h1>
-        </noframes>
-    </frameset>-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .list {
+                width: 30%;
+                float: left;
+                height: 310px;
+            }
+            .No {
+                width: 70%;
+                float: right;
+                height: 310px;
+            }
+            .table {
+                width: 100%;
+            }
+            .fio {
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
     <body>
-        <iframe src="i4-list.html" width="300" height="500" align="left" frameborder="0"></iframe>
-        <iframe src="i4-NoRecordBook.html" width="1000" height="500" align="rigth" frameborder="0"></iframe>
-        <iframe src="i4-table.html" width="100" height="200" align="left" frameborder="0"></iframe>
-        <iframe src="i4-fio.html" width="100" height="200" align="left" frameborder="0"></iframe>
+        <div class="list">
+            <iframe src="i4-list.html"></iframe>
+        </div>
+        <div class="No">
+            <iframe src="i4-NoRecordBook.html"></iframe>
+        </div>
+        <div class="table">
+            <iframe src="i4-table.html"></iframe>
+        </div>
+        <div class="fio">
+            <iframe src="i4-fio.html"></iframe>
+        </div>
     </body>
-    
 </html>
