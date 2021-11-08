@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab 2 - form</title>
+        <style>
+            body {
+                font-size: 16px;
+            }
+            form {
+                background-color: #fcf2e5;
+
+                display: flex;
+                flex-direction: column;
+
+                font-size: 2em;
+                width: 35em;
+            }
+            input {
+                width: auto;
+                height: 2em;
+            }
+            select {
+                width: 10em;
+                height: 3em;
+            }
+            .id-num {
+                display: flex;
+                flex-direction: column;
+
+                width: 10em;
+            }
+            .block-1 {
+                display: flex;
+                flex-direction: column;
+            }
+            .block-2{
+                display: flex;
+                flex-direction: column;
+            }
+            .block-2_2{
+                display: flex;
+                flex-direction: row;
+            }
+            .email{
+                width: auto;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+            }
+            br {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <div class="id-num">
+                <label for="id">Identification Number:</label> <br />
+                <input type="number" id="id" />
+            </div>
+
+            <div class="block-1">
+                <label for="legal">Legal Name:</label><br />
+                <input type="text" id="legal"/><br />
+
+                <label for="address1">Address 1:</label><br />
+                <input type="text" id="address1" /><br />
+
+                <label for="address2">Address 2:</label><br />
+                <input type="text" id="address2" /><br />
+            </div>
+
+            <div class="block-2">
+                <div class="block-2_1">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" />
+
+                    <label for="state">State:</label>
+                    <input type="text" id="state" />
+
+                    <label for="zip">Zip:</label>
+                    <input type="number" id="zip" />
+
+                    <label for="country">Country:</label>
+                    <select name="country" id="country">
+                        <option value="">USA</option>
+                        <option value="">Russia</option>
+                        <option value="">UK</option>
+                    </select>
+                </div>
+                <div class="block-2_2">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" class="email" id="email" />
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="reset" />
+                <input type="submit" />
+            </div>
+        </form>
+    </body>
+</html>
