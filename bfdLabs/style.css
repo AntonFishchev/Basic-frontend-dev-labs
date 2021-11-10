@@ -298,15 +298,12 @@ aside {
     line-height: 16px;
 }
 
-.info-item__sub .genre {
-    margin-right: 10px;
-}
 
 .genre {
     background: #ffffff2f;
     border-radius: 2px;
     padding: 3px 6px;
-
+    margin-right: 10px;
     border-left: solid 3px;
 }
 
@@ -316,6 +313,20 @@ aside {
 
 .genre_thriller {
     border-color: #3498db;
+}
+
+.genre_adventure {
+    border-color: #00c853;
+}
+
+.genre_sci-fi {
+    border-color: #BD10E0;
+}
+
+.genre_off {
+    background: #ffffff1b;
+    color: #ffffff96;
+    border-color: #ffffff13;;
 }
 
 .film-info__text {
@@ -376,6 +387,12 @@ aside {
     right: 0;
 
     cursor: pointer;
+}
+
+.jason-main__points {
+    position: absolute;
+    bottom: 20px;
+    right: 64px;
 }
 
 .jason-main__name {
@@ -599,7 +616,6 @@ aside {
     justify-content: space-between;
     flex-grow: 1;
     margin-top: 14px;
-    
 }
 
 .wall-item {
@@ -632,8 +648,6 @@ aside {
 
     bottom: 8px;
     left: 12px;
-
-    
 }
 
 .wall-item__link_stanger-things {
@@ -661,4 +675,325 @@ aside {
             rgba(23, 23, 23, 0.917403) 100%
         ),
         url(./image/news/block-2/wallpapers/Object.png);
+}
+
+.tops {
+    margin: 60px 16px 0 16px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.bloct-list {
+    flex: 0 0 33.33%;
+    padding: 0 10px;
+}
+
+.bloct-list_pr {
+    padding-right: 0;
+}
+
+.bloct-list_pl {
+    padding-left: 0;
+}
+
+.block-header_margin {
+    margin-bottom: 16px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-item-list__image {
+    width: 42px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+.main-item-list__name {
+    font-family: ProximaNova;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #4a90e2;
+    margin: 0;
+}
+
+.count {
+    font-family: ProximaNova;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000cb;
+}
+
+.b1::before {
+    content: "1.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.b2::before {
+    content: "2.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.b3::before {
+    content: "3.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.b4::before {
+    content: "4.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.b5::before {
+    content: "5.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.b6::before {
+    content: "6.";
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: ProximaNova;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.random {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.33%;
+    padding: 0 10px;
+}
+
+.random-main__name {
+    font-family: ProximaNova;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+
+    position: relative;
+
+    flex-grow: 1;
+    align-items: flex-end;
+
+    background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.0001) 12.07%,
+            rgba(23, 23, 23, 0.713796) 100%
+        ),
+        url(./image/tops/guardians-of-the-galaxy-poster.png);
+
+    background-size: cover;
+}
+
+.random-main__name > h2 {
+    font-family: ProximaNova;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+
+    margin: 0;
+
+    position: absolute;
+    bottom: 2px;
+    left: 12px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 12px 12px 12px;
+    background-color: #07131b;
+}
+
+.genres-btn {
+    margin-bottom: 17px;
+
+    width: 200%;
+
+    color: #fff;
+    font-family: ProximaNova;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.genres-btn > .genre {
+    float: left;
+}
+
+.btns > button {
+    background: rgba(255, 255, 255, 0.185292);
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    font-family: ProximaNova;
+    font-size: 22px;
+    line-height: 25px;
+
+    height: 53px;
+}
+
+.btns > button > img {
+    padding-right: 10px;
+}
+
+.recently {
+    margin: 30px 0 0 16px;
+}
+
+.cascade {
+    position: relative;
+    display: flex;
+}
+
+.recently__title {
+    margin: 0 0 14px 0;
+
+    font-family: ProximaNova;
+    font-size: 24px;
+    line-height: 21px;
+}
+
+.cascade__image {
+    padding-right: 2px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+
+    margin: 36px 0 11px 0;
+    height: 210px;
+}
+
+.f-block {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 15px 0 15px;
+}
+
+.f-block__title {
+    margin: 0;
+
+    font-family: ProximaNova;
+    font-size: 24px;
+    line-height: 21px;
+
+    margin-bottom: 16px;
+}
+
+.f-block__text {
+    font-family: ProximaNova;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000000cb;
+}
+
+.f-block__link {
+    font-family: ProximaNova;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+
+    color: #4a90e2;
+}
+
+.icons {
+    width: 215px;
+}
+
+.icons__item {
+    padding-right: 15px;
+    padding-bottom: 14px;
+}
+
+.icons-3 {
+    flex-wrap: wrap;
+    width: 202px;
+}
+
+.link-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    margin: 0 15px 0 15px;
+}
+
+.link-block__item {
+    color: #4a90e2;
+    text-decoration: none;
+
+    font-family: ProximaNova;
+    font-size: 14px;
+    line-height: 29px;
+
+    display: block;
+    width: 33%;
+}
+
+.com {
+    height: 100%;
+    margin: 0 15px 11px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.com > p {
+    margin: 0;
+    padding: 0;
+
+    color: #4a90e2;
+
+    font-family: ProximaNova;
+    font-size: 14px;
+    line-height: 29px;
 }
