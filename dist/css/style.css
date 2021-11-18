@@ -132,6 +132,31 @@ h6 {
 
 /*--------------------*/
 
+.swiper .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #979797;
+  margin: 15px;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background: #717cff;
+}
+
 .btn-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +382,7 @@ body ._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 55px;
 }
 
 .main-block .social-item {
@@ -367,6 +393,39 @@ body ._lock {
   width: 470;
   height: 565px;
   z-index: 2;
+}
+
+.universities {
+  text-align: center;
+  background: #fafafa;
+  padding: 55px 0 55px 0;
+}
+
+.universities-slider {
+  padding: 30px 0 70px 0;
+  max-width: 1440px;
+}
+
+.universities__title {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: #373737;
+  padding: 0 0 90px 0;
+}
+
+.universities-slider__image {
+  text-align: center;
+}
+
+.universities-slider__image img {
+  max-width: 100%;
+  padding-bottom: 104px;
 }
 
 .our-services {
@@ -452,6 +511,7 @@ body ._lock {
 .news {
   background: #fafafa;
   padding-top: 100px;
+  padding-bottom: 124px;
 }
 
 .news .news__cards {
@@ -496,7 +556,6 @@ body ._lock {
 .news .btn-arrow {
   margin: 0 auto;
   margin-top: 120px;
-  margin-bottom: 120px;
 }
 
 .ready {
@@ -690,6 +749,12 @@ body ._lock {
   }
 }
 
+@media (max-width: 1200px) {
+  .news .btn-arrow {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 1000px) {
   .header {
     padding: 10px;
@@ -827,10 +892,6 @@ body ._lock {
 
   .main-block .main-block__photo {
     display: none;
-  }
-
-  .news .btn-arrow {
-    margin-top: 50px;
   }
 
   .ready div {

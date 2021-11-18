@@ -4,7 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/style.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
         <title>gulp sample</title>
     </head>
     <body>
@@ -30,7 +34,7 @@
         </div>
     </div>
 </header>
-
+ 
         <section class="main-block">
     <div class="text-block">
         <h2 class="main-block__title">
@@ -77,6 +81,34 @@
     <!-- <img src="images/main-block/Oval.svg" alt="" class="main-block__oval" /> -->
 </section>
 
+        <section class="universities">
+    <h2 class="universities__title">Featured Universities</h2>
+    <div class="universities-slider swiper">
+        <div class="universities-slider__wrapper swiper-wrapper">
+            <div class="universities-slider__slide swiper-slide">
+                <div class="universities-slider__image">
+                    <img src="images/universities/1.png" alt="" />
+                </div>
+            </div>
+            <div class="universities-slider__slide swiper-slide">
+                <div class="universities-slider__image">
+                    <img src="images/universities/2.png" alt="" />
+                </div>
+            </div>
+            <div class="universities-slider__slide swiper-slide">
+                <div class="universities-slider__image">
+                    <img src="images/universities/3.png" alt="" />
+                </div>
+            </div>
+            <div class="universities-slider__slide swiper-slide">
+                <div class="universities-slider__image">
+                    <img src="images/universities/4.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
 
         <section class="our-services">
     <div class="title-sub">
@@ -164,7 +196,7 @@
         </div>
     </div>
 </section>
-
+ 
         <section class="news">
     <div class="title-sub">
         <h2 class="title-sub__title">News</h2>
@@ -204,9 +236,19 @@
     </button>
 </section>
 
+        <section class="events">
+    <div class="title-sub">
+        <h2 class="title-sub__title">Upcoming University Events</h2>
+        <p class="title-sub__subtitle">
+            Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
+            metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo
+            ante cum teneam sententiam, quid bonum esse vult.
+        </p>
+    </div>
+</section>
 
 
-
+        
         <section class="ready">
     <div class="">
         <p class="ready__title">Ready to chase your dreams?</p>
@@ -215,7 +257,7 @@
         </button>
     </div>
 </section>
-
+ 
         <footer class="footer">
     <section>
         <div class="footer__container">
@@ -264,6 +306,8 @@
     </section>
 </footer>
 
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script src="js/script.min.js"></script>
     </body>
 </html>
