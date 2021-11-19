@@ -9,6 +9,8 @@
     }
 }
 
+@import "blocks/preloader";
+
 @import "fonts";
 @import "reset";
 
@@ -29,3 +31,5 @@
 @import "blocks/testimonial";
 @import "blocks/ready";
 @import "blocks/footer";
+
+@import "blocks/popup.scss";

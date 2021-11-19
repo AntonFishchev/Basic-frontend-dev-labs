@@ -1,0 +1,35 @@
+#preloader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+#preloader div {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+
+    width: 260px;
+    height: 40px;
+
+    font-family: arial;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 8px;
+    text-align: center;
+
+    color: #111;
+}

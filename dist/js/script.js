@@ -1,3 +1,9 @@
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById("preloader").style.display = "none";
+    }, 543);
+};
+
 const universitiesSwiper = new Swiper(".universities-slider", {
     pagination: {
         el: ".universities-pagination",
@@ -107,7 +113,7 @@ const headerBtn = document.querySelector(".header__btn");
 if (iconMenu) {
     const bodyMenu = document.querySelector(".menu__body");
     iconMenu.addEventListener("click", (e) => {
-        document.body.classList.toggle("_lock");
+        //document.body.classList.toggle("lock");
         iconMenu.classList.toggle("menu__icon_active");
         bodyMenu.classList.toggle("menu__body_active");
         headerBtn.classList.toggle("header__btn_active-menu");
@@ -120,3 +126,10 @@ if (iconMenu) {
         headerBtn.classList.remove("header__btn_active-menu");
     });
 }
+
+let btns = document.querySelectorAll("button").forEach((item) => {
+    item.addEventListener("click", () => {
+        document.querySelector(".popup").classList.toggle("open");
+        document.querySelector(".body").classList.toggle("lock");
+    });
+});
