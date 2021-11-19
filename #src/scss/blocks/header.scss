@@ -81,6 +81,8 @@
         }
 
         li {
+            display: flex;
+            align-items: center;
             list-style: none;
             padding-right: 65px;
         }
@@ -95,7 +97,7 @@
             position: relative;
             overflow-y: hidden;
             height: 100%;
-            margin-top: 16px;
+            margin-top: 23px;
 
             &::after {
                 content: "";
